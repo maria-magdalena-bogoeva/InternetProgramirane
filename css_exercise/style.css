@@ -1,0 +1,39 @@
+
+    
+    #content {
+    
+    background: #EEE;
+    
+    }
+    
+    .special {
+    
+    font-style: italic;
+    
+    color: blue;
+    
+    }
+    
+    p {
+    
+    font-size: 24px;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 70px;
+    }
+    #redBorder {
+
+        border: 2px solid red;
+        text-align: center;
+        border-radius: 10px;
+        background: lightgray;
+        font-size: 16px;
+        padding: 15px 32px;
+        font-size: 16px;
+        
+        }
+
+        .container {
+            margin-left: 600px;
+          }
+    
