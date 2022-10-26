@@ -1,0 +1,46 @@
+nav{
+
+    background-color: rgb(231, 170, 204);
+    
+    text-align:center;
+    
+    
+    }
+     li{
+    
+        display:inline-block;
+        padding:8px;
+        
+        }
+        a:hover{
+
+            color:rgb(250, 250, 250);
+            
+            
+            }
+            a{
+                color: blueviolet;
+            }
+
+            .fruits{
+                border: 1px solid rgb(231, 84, 74);
+                display: inline-block;
+                width:30%;
+                text-align: center;
+                
+            }
+            h4{
+                color: rgb(233, 61, 61);
+            }
+            img{
+                width: 150px;
+                margin: 40px;
+            }
+            header{
+                background-color: rgb(243, 108, 108);
+                margin: 50px;
+            }
+            main{
+                margin: 50px;
+            }
+
