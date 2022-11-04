@@ -1,0 +1,115 @@
+nav{
+
+    background-color: rgb(140, 156, 230);
+    
+    text-align:center;
+    
+    }
+    
+    li{
+    
+    display:inline-block;
+    
+    padding:8px;
+    
+    }
+    h1{
+        text-align: center;
+    }
+    .mtn{
+    
+        border: 2px solid rgb(6, 97, 3);
+        display: inline-block;
+        width:30%;
+        background-color: rgb(169, 228, 174);
+        vertical-align: top;
+        padding: 10px;
+        height: 200px;
+         
+    }
+    @media only screen and (max-width: 800px) {
+        article{width: 100%;}
+        }
+        .vitoshamap{
+            float: right;
+            padding: 25px 50px 75px;
+            margin-left:100px ;
+            margin-right: 100px;
+            
+        }
+        .vitosha{
+            padding: 80px 50px 75px;
+            text-align: justify;
+            margin-left:100px ;
+            margin-right: 100px;
+        }
+        .para{
+            margin-top: 150px;
+            margin-left:100px ;
+            margin-right: 100px;
+            text-align: justify;
+        }
+        .kontakti{
+            display: inline-block;
+            width: 30%;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          .dropdown-content a {
+            display: block;
+            color: #000000;
+            padding: 5px;
+            text-decoration: none;
+          }
+          .dropdown-content a:hover {
+            color: #FFFFFF;
+            background-color: #00A4BD;
+          }
+       .parks{
+        margin-top: 150px;
+        margin-left:100px ;
+        margin-right: 100px;
+       }
+       .zlatniamap{
+        float: right;
+        padding: 25px 50px 75px;
+        margin-left:100px ;
+        margin-right: 100px;
+        
+    }
+    .zlatni{
+        padding: 80px 50px 75px;
+        text-align: justify;
+        margin-left:100px ;
+        margin-right: 100px;
+    }
+    h3{
+        text-decoration: underline;
+    }
+    .balkanmap{
+        
+        padding: 25px 50px 75px;
+        margin-left:100px ;
+        margin-right: 100px;
+        
+    }
+    .balkan{
+        padding: 80px 50px 75px; 
+        margin-left:100px ;
+        margin-right: 100px;
+    }
+       
+   
