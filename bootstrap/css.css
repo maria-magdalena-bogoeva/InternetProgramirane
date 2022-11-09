@@ -1,0 +1,20 @@
+ul{
+    text-align: center;
+margin-left: 200px;
+margin-right: 200px;
+}
+@media only screen and (max-width: 800px) {
+    body{width: 100%;}
+    }
+    .button{
+        margin-left:200px;
+    }
+    table{
+        margin-left:100px;
+        margin-right:100px;
+    }
+    form{
+        margin-left:100px;
+        margin-right:100px;
+    }
+  
