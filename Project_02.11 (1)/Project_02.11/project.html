@@ -7,6 +7,15 @@
     <title>Природните паркове в България</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+       .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: auto;
+      }
+</style>
 <body>
     <header>
         <nav >
@@ -23,8 +32,17 @@
             
             </ul>
             
-            </nav>
-        <h1>Българската природа</h1> 
+            </nav><h1>Българската природа</h1> 
+            <div id="slideshow" class="center">
+                
+                <img src="https://www.kasandbox.org/programming-images/animals/birds_rainbow-lorakeets.png" alt="Rainbow lorakeets" />
+                <img src="https://www.kasandbox.org/programming-images/animals/butterfly.png"alt="Butterfly" />
+                <img src="https://www.kasandbox.org/programming-images/animals/cat.png" alt="Cat" />
+                <img src="https://www.kasandbox.org/programming-images/animals/crocodiles.png" alt="Crocodiles" />
+                <img src="https://www.kasandbox.org/programming-images/animals/fox.png" alt="Fox" />
+                
+            </div>
+        
     </header>
     <div class="center">
         <div class="bg">
@@ -233,5 +251,38 @@
            </footer>
            
     
+
+
+
+<script>
+   var slideShow=function(container){
+    this.img=[];
+    this.curlImg=0;
+    for(var i=0;i < container.childElementCount;i++){
+        this.img.push(container.children[i])
+        this.img[i].style.display="none";
+    }
+
+    var nextSlide=function(){
+        for(var i=0;i < this.img.length; i++){
+            this.img[i].style.display="none";
+        }
+        this.img[this.curlImg].style.display="block";
+        this.curlImg++;
+        if (this.curlImg>=this.img.length){
+            this.curlImg=0;
+        }
+        window.setTimeout(nextSlide.bind(this),1000);
+    };
+
+    nextSlide.call(this);
+} ;
+    
+    slideShow(document.getElementById('slideshow'))
+</script>
+
+
+
+
 </body>
 </html>

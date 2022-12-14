@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="slideshow">
+        <img src="https://www.kasandbox.org/programming-images/animals/birds_rainbow-lorakeets.png" alt="Rainbow lorakeets" />
+        <img src="https://www.kasandbox.org/programming-images/animals/butterfly.png"alt="Butterfly" />
+        <img src="https://www.kasandbox.org/programming-images/animals/cat.png" alt="Cat" />
+        <img src="https://www.kasandbox.org/programming-images/animals/crocodiles.png" alt="Crocodiles" />
+        <img src="https://www.kasandbox.org/programming-images/animals/fox.png" alt="Fox" />
+        
+    </div>
+    <script>
+        var slideShow=function(container){
+    this.img=[];
+    this.curlImg=0;
+    for(var i=0;i < container.childElementCount;i++){
+        this.img.push(container.children[i])
+        this.img[i].style.display="none";
+    }
+
+    var nextSlide=function(){
+        for(var i=0;i < this.img.length; i++){
+            this.img[i].style.display="none";
+        }
+        this.img[this.curlImg].style.display="block";
+        this.curlImg++;
+        if (this.curlImg>=this.img.length){
+            this.curlImg=0;
+        }
+        window.setTimeout(nextSlide.bind(this),1000);
+    };
+
+    nextSlide.call(this);
+} ;
+    
+    slideShow(document.getElementById('slideshow'))
+    </script>
+</body>
+</html>
